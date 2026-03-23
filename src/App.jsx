@@ -18,13 +18,13 @@ import UsersAdmin from './pages/admin/UsersAdmin';
 import PostsAdmin from './pages/admin/PostsAdmin';
 
 // Dummy components to avoid breaking imports for CRM features yet to be fully coded on frontend
-const DummyAdminPage = ({title}) => (
-    <div className="admin-page">
-        <div className="admin-header"><h2>{title}</h2><p>CRM Feature Coming Soon</p></div>
-        <div className="glass-panel" style={{padding: '3rem', textAlign: 'center'}}>
-            <p className="text-secondary">UI interface for this module is currently matching up with the backend API.</p>
-        </div>
+const DummyAdminPage = ({ title }) => (
+  <div className="admin-page">
+    <div className="admin-header"><h2>{title}</h2><p>CRM Feature Coming Soon</p></div>
+    <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center' }}>
+      <p className="text-secondary">UI interface for this module is currently matching up with the backend API.</p>
     </div>
+  </div>
 );
 
 const MainSiteLayout = () => (
@@ -57,8 +57,8 @@ function App() {
 
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      <Toaster position="top-right" toastOptions={{ 
-          style: { background: '#2d3748', color: '#fff', borderRadius: '10px' } 
+      <Toaster position="top-right" toastOptions={{
+        style: { background: '#2d3748', color: '#fff', borderRadius: '10px' }
       }} />
       <Routes>
         {/* Main Website Client Routes */}
